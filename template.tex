@@ -1,0 +1,63 @@
+%%%%%%%%%%%%%%%%%%%%%%% file template.tex %%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This is a template file for the LaTeX package SVJour2 for the
+% Springer journal "Machine Vision and Applications".
+%
+%                                    Springer Heidelberg 2004/11/04
+%
+% Copy it to a new file with a new name and use it as the basis
+% for your article. Delete % as needed.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%s
+\documentclass[twocolumn,fleqn,runningheads]{template/svjour2}[23.12.1232]
+%
+\smartqed  % flush right qed marks, e.g. at end of proof
+%
+\usepackage{graphicx}
+\usepackage{template/biograph}        % to allow for author biography at the end
+%
+% \usepackage{mathptmx}      % use Times fonts if available on your TeX system
+%
+% insert here the call for the packages your document requires
+%\usepackage{latexsym}
+% etc.
+%
+% please place your own definitions here and don't use \def but
+% \newcommand{}{}
+%
+\journalname{Methoden des maschinellen Lernens}
+%
+\begin{document}
+
+\title{A machine learning based approach of estimating water intake with inertial sensors}
+
+\author{Cem Basoglu}
+
+\institute{Cem Basoglu \at
+           Univ. of Appl. Sci., Minden, Germany \\
+		   \email{cem.basoglu@fh-bielefeld.de}
+}
+
+\date{Submited: 07/11/2018}
+
+\maketitle
+
+\begin{abstract}
+Abstract goes here
+\keywords{machine learning \and water intake \and activity recognition \and feature extraction}
+\end{abstract}
+
+\input{1_introduction.tex}
+\input{2_related_work.tex}
+\input{3_the_approach.tex}
+\input{4_results.tex}
+\input{5_conclusion.tex}
+
+
+\bibliographystyle{template/spmpsci.bst}
+\bibliography{0_bibliography}
+
+\end{document}
+% end of file template.tex
