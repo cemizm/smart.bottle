@@ -32,30 +32,18 @@
 \maketitle
 
 \begin{abstract}
-Abstract goes here
-\keywords{machine learning \and water intake \and activity recognition \and feature extraction}
+Managing water intake in everyday life can be a hard and challenging task. Many available solutions require multiple sensors, device with relatively high computational power in the volume estimation process.  In order to identify typical water intake patterns in inertial sensor data, training data is collected and visually analyzed. Based on the findings, various machine learning based methods are trained to detect and estimate water intake events. The proposed method is able to detect drinking events with precision of 95 \% while maintaining a RMSE of 13 milliliters. For further generalization it is necessary to have additional training data with different types of bottles and several subjects.
+\keywords{machine learning \and water intake \and hidden markov model \and smart bottle \and event detection \and volume estimation}
 \end{abstract}
 
 \input{1_introduction.tex}
 \input{2_related_work.tex}
 \input{3_the_approach.tex}
 \input{4_results.tex}
-
-\clearpage
 \input{5_conclusion.tex}
 
 \bibliographystyle{template/spmpsci.bst}
 \bibliography{0_bibliography}
-
-\newpage
-\section*{Schedule}
-\begin{itemize}
-\item \textbf{06.06} Develop app for collecting sensor data
-\item \textbf{13.06} Collect and label sensor data
-\item \textbf{20.06} Analyze labeled data and select features
-\item \textbf{04.07} Build various classifiers
-\item \textbf{11.07} Finish paper
-\end{itemize}
 
 \end{document}
 % end of file template.tex

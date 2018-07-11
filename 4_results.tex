@@ -1,3 +1,18 @@
 \section{Experimental results}
-\subsection{Comparing results}
-\subsection{Comparing with existing approaches}
+For the performance evaluation of the proposed method as shown in Figure \ref{fig:workflow}, the steps event detection and volume estimation are separately evaluated. For this purpose a test person is equipped with the smart bottle in order to collect data of drinking events as well as noise like carrying in a backpack. In this process, the mobile application is used to label the drinking events and a scale to measure the weight of the bottle before and after each drinking event. This data builds the ground truth for the performance evaluation and contains a total of 15 drinking events and 10 noise fragments. To measure the performance of the event detection step, common metrics for binary classifiers were used. For the volume estimation performance, the root mean square error (RMSE) between the estimation and the actual observation is calculated.
+\begin{table}[h]
+    \centering
+    \caption{Event detection performance}
+    \begin{tabular}{llr}
+        \hline\noalign{\smallskip}
+        Component & Metric & Result\\
+        \tableheadseprule\noalign{\smallskip}
+        Event detection & Precision & 95 \% \\
+        Event detection & Recall & 100 \% \\
+        Event detection & Accuracy & 95 \% \\
+        Volume Estimation & RMSE & 13.18 \\
+        \noalign{\smallskip}\hline
+    \end{tabular}
+    \label{tab:performance}
+\end{table}\\
+The precision of the event detection component means that 95 \% of the detected drinking events are in fact drinking events. With a recall of 100 \%, no drinking events are missed which results in an overall accuracy of 95 \% in the event detection step. The RMSE of the volume estimation component indicates an average deviation of 13.18 milliliters for each drinking event.
